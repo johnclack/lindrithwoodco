@@ -44,7 +44,10 @@
       <section id="wood-options" class="wood-options quantities-panel" aria-labelledby="wood-options-heading">
         <p class="kicker">Available Quantities</p>
         <h2 id="wood-options-heading">Choose the right amount for your fire.</h2>
-        <img src="assets/order-options.png" alt="Firewood quantity guide showing four-bundle packs, eight-bundle packs, and one-third of a face cord, with suggested uses and estimated number of fires.">
+        <button class="quantity-image-button" type="button" aria-label="Enlarge the firewood quantity guide" aria-haspopup="dialog" aria-controls="quantity-lightbox">
+          <img src="assets/order-options.png" alt="Firewood quantity guide showing four-bundle packs, eight-bundle packs, and one-third of a face cord, with suggested uses and estimated number of fires.">
+          <span class="image-enlarge-hint">Click to enlarge</span>
+        </button>
       </section>
     </div>
 
@@ -53,5 +56,22 @@
       <a class="secondary-cta" href="index.html">Return Home</a>
     </div>
   </main>
+
+  <dialog id="quantity-lightbox" class="image-lightbox" aria-label="Enlarged firewood quantity guide">
+    <button class="lightbox-close" type="button" aria-label="Close enlarged image">×</button>
+    <img src="assets/order-options.png" alt="Enlarged firewood quantity guide showing four-bundle packs, eight-bundle packs, and one-third of a face cord.">
+  </dialog>
+
+  <script>
+    const lightbox = document.getElementById('quantity-lightbox');
+    const openButton = document.querySelector('.quantity-image-button');
+    const closeButton = lightbox.querySelector('.lightbox-close');
+
+    openButton.addEventListener('click', () => lightbox.showModal());
+    closeButton.addEventListener('click', () => lightbox.close());
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) lightbox.close();
+    });
+  </script>
 </body>
 </html>
