@@ -1,1 +1,57 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Order Wood | Lindrith Wood Co.</title><link rel="stylesheet" href="styles.css"></head><body class="page-shell"><header class="topbar"><a class="mini-brand" href="index.html">Lindrith Wood Co.</a><nav><a href="order.html">Order</a><a href="service-area.html">Service Area</a><a href="story.html">Story</a><a href="bundles-cords.html">Bundles & Cords</a></nav></header><main class="content"><p class="kicker">Order Wood</p><h1>Request a load.</h1><p class="lead">Use this page to collect the information needed to confirm availability, quantity, delivery location, and timing.</p><div class="panel-grid"><section class="panel"><form action="https://formspree.io/f/YOUR_FORM_ID" method="post"><label>Name<input name="name" required></label><label>Email<input type="email" name="email" required></label><label>Phone<input type="tel" name="phone"></label><label>Delivery area or ZIP code<input name="location" required></label><label>Quantity<select name="quantity" required><option value="">Choose one</option><option>Bundle</option><option>Quarter cord</option><option>Half cord</option><option>Full cord</option><option>Not sure</option></select></label><label>Notes<textarea name="notes" rows="6" placeholder="Wood type, delivery access, preferred timing, or questions"></textarea></label><button type="submit">Send Request</button></form></section><aside class="panel"><h2>Before ordering</h2><p>Orders are available only within our delivery area. Check the map before submitting a request.</p><p><a class="text-link" href="service-area.html">View the service area map →</a></p><p>Add your actual prices, wood species, delivery terms, stacking policy, and payment methods here.</p><p>Replace <code>YOUR_FORM_ID</code> with your Formspree form ID.</p></aside></div></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>From Our Ranches to Your Community | Lindrith Wood Co.</title>
+  <meta name="description" content="Review the Lindrith Wood Co. North Valley service area and available firewood quantities before ordering.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-shell">
+  <header class="topbar">
+    <a class="mini-brand" href="index.html">Lindrith Wood Co.</a>
+    <nav>
+      <a href="order.html" aria-current="page">Order</a>
+      <a href="story.html">Story</a>
+      <a href="order.html#wood-options">Bundles &amp; Cords</a>
+    </nav>
+  </header>
+
+  <main class="content service-content">
+    <p class="kicker">Order Wood</p>
+    <h1 class="page-title">Service Area and Order Quantities</h1>
+
+    <div class="top-action-row" aria-label="Page shortcuts">
+      <a class="cta" href="actual-order.html">Proceed to Order</a>
+      <a class="secondary-cta" href="#wood-options">View Wood Quantities</a>
+    </div>
+
+    <div class="order-overview">
+      <section class="service-area-panel" aria-labelledby="service-heading">
+        <div class="service-intro">
+          <p class="kicker">Service Area</p>
+          <h2 id="service-heading">From Our Ranches to Your Community</h2>
+
+          <p class="lead">As a small, community-based business, we currently serve the North Valley areas highlighted in green below. Our service is delivery only and all orders come with free delivery. Please only order if you live in the highlighted area.</p>
+        </div>
+
+        <figure class="service-map compact-map">
+          <img src="assets/service-area.png" alt="Map showing the Lindrith Wood Co. North Valley delivery area highlighted in green.">
+          <figcaption>Current North Valley delivery area highlighted in green.</figcaption>
+        </figure>
+      </section>
+
+      <section id="wood-options" class="wood-options quantities-panel" aria-labelledby="wood-options-heading">
+        <p class="kicker">Available Quantities</p>
+        <h2 id="wood-options-heading">Choose the right amount for your fire.</h2>
+        <img src="assets/order-options.png" alt="Firewood quantity guide showing four-bundle packs, eight-bundle packs, and one-third of a face cord, with suggested uses and estimated number of fires.">
+      </section>
+    </div>
+
+    <div class="service-actions final-order-actions">
+      <a class="cta" href="actual-order.html">Proceed to Order</a>
+      <a class="secondary-cta" href="index.html">Return Home</a>
+    </div>
+  </main>
+</body>
+</html>

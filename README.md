@@ -17,3 +17,6 @@ Create a Formspree form and replace `YOUR_FORM_ID` in `order.html`.
 
 ## Publish
 Upload all files to the root of the GitHub Pages repository. The included `CNAME` is set to `lindrithwood.com`.
+
+
+Ordering flow: `order.html` (service area) → `bundles-cords.html` (sizes) → `actual-order.html` (request form).
