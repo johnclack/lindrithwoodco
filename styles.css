@@ -25,7 +25,7 @@ a{color:inherit}
 .nav-card strong{font-size:1.02rem;letter-spacing:.015em}
 .arrow{color:var(--red-bright);font-size:2rem;font-weight:300;line-height:1}
 .microcopy{max-width:350px;margin:0;color:#8f8782;font-size:.78rem;line-height:1.5}
-.open-space{position:relative;min-height:100vh;background-image:linear-gradient(90deg,rgba(0,0,0,.28),rgba(0,0,0,.02) 30%),url('assets/flannel-family.png');background-size:cover;background-position:center 34%}
+.open-space{position:relative;min-height:100vh;background-image:linear-gradient(90deg,rgba(0,0,0,.28),rgba(0,0,0,.02) 30%),url('assets/flannel-family.png');background-size:cover;background-position:center 42%}
 .open-space::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.22))}
 .page-shell{min-height:100vh;background:radial-gradient(circle at 85% 0%,rgba(179,19,25,.18),transparent 34%),linear-gradient(145deg,#050505,#171010)}
 .topbar{display:flex;justify-content:space-between;align-items:center;padding:1rem 5vw;border-bottom:1px solid var(--line);background:rgba(0,0,0,.78)}
@@ -48,7 +48,7 @@ button,.cta{display:inline-block;width:max-content;padding:.85rem 1.15rem;border
 .bundle{padding:1.6rem;border:1px solid var(--line);background:rgba(255,255,255,.04)}
 .bundle h2{margin:.2rem 0 .6rem;font-family:Georgia,serif}
 .bundle .price{color:var(--red-bright);font-size:1.25rem;font-weight:800}
-@media(max-width:820px){.landing{grid-template-columns:1fr}.portal{min-height:100vh;background:linear-gradient(180deg,rgba(0,0,0,.84),rgba(18,0,3,.94)),url('assets/flannel-family.png') center 34%/cover;padding:2rem}.open-space{display:none}.nav-list{max-width:none}.brand-lockup{margin-top:auto}.microcopy{margin-bottom:auto}.panel-grid,.bundle-grid{grid-template-columns:1fr}.topbar{align-items:flex-start;gap:1rem;flex-direction:column}.topbar nav{width:100%;justify-content:space-between}}
+@media(max-width:820px){.landing{grid-template-columns:1fr}.portal{min-height:100vh;background:linear-gradient(180deg,rgba(0,0,0,.84),rgba(18,0,3,.94)),url('assets/flannel-family.png') center/cover;padding:2rem}.open-space{display:none}.nav-list{max-width:none}.brand-lockup{margin-top:auto}.microcopy{margin-bottom:auto}.panel-grid,.bundle-grid{grid-template-columns:1fr}.topbar{align-items:flex-start;gap:1rem;flex-direction:column}.topbar nav{width:100%;justify-content:space-between}}
 
 .text-link{color:var(--red-bright);font-weight:800;text-decoration:none}.text-link:hover{text-decoration:underline}.service-content{width:min(1180px,calc(100% - 2rem))}.service-map{margin:3rem 0 0;border:1px solid var(--line);border-top:5px solid var(--red);background:#0b0b0b;box-shadow:0 22px 55px rgba(0,0,0,.36)}.service-map img{display:block;width:100%;height:auto}.service-map figcaption{padding:1rem 1.2rem;color:#bfb5ae;font-size:.86rem;line-height:1.5}.service-actions{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1.5rem}.secondary-cta{display:inline-block;width:max-content;padding:.85rem 1.15rem;border:1px solid var(--line);border-radius:3px;color:#fff;font-weight:800;text-decoration:none}.secondary-cta:hover{border-color:var(--red-bright);background:rgba(179,19,25,.12)}
 .order-topline{display:flex;align-items:flex-start;justify-content:space-between;gap:2rem}.order-topline>div{min-width:0}.order-topline h1{max-width:820px}.proceed-cta{flex:0 0 auto;margin-top:.25rem;white-space:nowrap}.wood-options{margin-top:4.5rem;scroll-margin-top:2rem}.wood-options h2{margin:.2rem 0 1.5rem;font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.2rem,5vw,4rem);line-height:1.08}.wood-options img{display:block;width:100%;height:auto;border:1px solid var(--line);border-top:5px solid var(--red);background:#0b0b0b;box-shadow:0 22px 55px rgba(0,0,0,.36)}.final-order-actions{margin-top:2rem}
@@ -126,64 +126,3 @@ button,.cta{display:inline-block;width:max-content;padding:.85rem 1.15rem;border
   .order-overview .quantities-panel{max-width:520px;justify-self:center}
   .order-overview .wood-options img{max-width:440px;margin-right:auto}
 }
-
-
-/* Click-to-enlarge quantity guide */
-.quantity-image-button{
-  position:relative;
-  display:block;
-  width:100%;
-  max-width:360px;
-  margin-left:auto;
-  padding:0;
-  border:0;
-  border-radius:2px;
-  background:transparent;
-  cursor:zoom-in;
-}
-.quantity-image-button img{width:100%;max-width:none!important;margin:0!important}
-.image-enlarge-hint{
-  position:absolute;
-  right:.7rem;
-  bottom:.7rem;
-  padding:.42rem .62rem;
-  border:1px solid rgba(255,255,255,.25);
-  border-radius:3px;
-  background:rgba(0,0,0,.78);
-  color:#fff;
-  font-size:.72rem;
-  font-weight:800;
-  letter-spacing:.05em;
-  text-transform:uppercase;
-}
-.quantity-image-button:hover .image-enlarge-hint,
-.quantity-image-button:focus-visible .image-enlarge-hint{background:var(--red-dark)}
-.quantity-image-button:focus-visible{outline:3px solid var(--red-bright);outline-offset:4px}
-.image-lightbox{
-  width:min(94vw,1000px);
-  max-height:94vh;
-  padding:clamp(2.5rem,5vw,4rem) clamp(.75rem,2vw,1.25rem) 1rem;
-  border:1px solid rgba(255,255,255,.22);
-  border-radius:5px;
-  background:#090909;
-  box-shadow:0 28px 90px rgba(0,0,0,.8);
-}
-.image-lightbox::backdrop{background:rgba(0,0,0,.88);backdrop-filter:blur(3px)}
-.image-lightbox img{display:block;max-width:100%;max-height:calc(94vh - 5rem);margin:auto;object-fit:contain}
-.lightbox-close{
-  position:absolute;
-  top:.55rem;
-  right:.7rem;
-  width:2.5rem;
-  height:2.5rem;
-  padding:0;
-  border:1px solid rgba(255,255,255,.25);
-  border-radius:50%;
-  background:#171717;
-  color:#fff;
-  font-size:1.9rem;
-  font-weight:400;
-  line-height:1;
-}
-.lightbox-close:hover{background:var(--red-dark)}
-@media(max-width:860px){.quantity-image-button{max-width:440px;margin-right:auto}}
